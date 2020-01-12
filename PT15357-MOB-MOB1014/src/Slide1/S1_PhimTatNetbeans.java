@@ -27,8 +27,14 @@ public class S1_PhimTatNetbeans {
         //10. Shift-F6: chạy file hiện tại (Hay Dùng)
         //11. Shift-F11: xóa và build project chính
         //12. Alt + Shift + F: Format lại code cho đàng hoàng (Hay Dùng)
-        
-   
+
+        //Để in ra màn hình abc
+        System.out.println("abc");
+        System.out.println("abc");
+        System.out.println("abc");
+        System.out.println("abc");
+        System.out.println("abc");
+
     }
 
 }

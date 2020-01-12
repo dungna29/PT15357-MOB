@@ -27,7 +27,16 @@ public class S3_CacHamToanHoc {
         //Math.round(a) - Làm tròn số của a
         //Math.random() - Sinh số ngẫu nhiên từ 0 đến 1 (0.0 and less than 1.0) 
         
-        //Tìm giá trị nhỏ nhất và lớn nhất của 2 số sau hoặc bạn bắt người dùng nhập vào 2 số và chỉ ra số nào lớn nhất hoặc nhỏ nhất        
+        //Tìm giá trị nhỏ nhất và lớn nhất của 2 số sau hoặc bạn bắt 
+        //người dùng nhập vào 2 số và chỉ ra số nào lớn nhất hoặc nhỏ nhất 
+        
+        //Tìm số lớn nhất khi người dùng nhập vào
+        double a = 7.4;
+        double b = 7.7;
+        System.out.println("Số lớn nhất là:" + Math.min(a, b));
+        System.out.println(Math.round(a));
+        
+        
         //Các hàm còn lại các bạn tự thực hành
         
         
