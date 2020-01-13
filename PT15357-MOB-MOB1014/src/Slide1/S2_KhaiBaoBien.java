@@ -11,15 +11,17 @@ package Slide1;
  */
 public class S2_KhaiBaoBien {
 
+    String name = "Dung";//Khai báo biến toàn cục
+
     public static void main(String[] args) {
 
         // *********** Biến khái niệm cơ bản ***********
         //Cú pháp khai báo biến <kiểu dữ liệu> <tên biến> [=giá trị khởi đầu];
         // Nên đặt tiếng Anh.
-        String name = "Dung";
+        String name = "Dung";//Cách khai báo cục bộ
         int number = 1;
         int Number = 1;//Phân biệt chữ hoa và chữ thường và trong 1 hàm chỉ có 1 tên biến duy nhất
-        
+
         int a, b, c, d = 9;
         String name2;//Khai báo biến chưa khởi tạo giá trị bên trong
         String name3, name4, name5, name6 = "Java1";//Khai báo nhiều biến trên một dòng
@@ -34,13 +36,10 @@ public class S2_KhaiBaoBien {
         // String first_name; // Kiểu Underscores //Sử dụng khi tên biến có 2 từ trở lên 
         // Lưu ý: đặt tên biến không được phép bắt đầu bởi số , có dấu gạch ngang, sử dụng từ khóa của java (int,if,long....)
         // int int = 5; //Vi phạm nguyên tắc đặt biến
-        
-        
         // Trong cùng 1 class thì biến phải sử dụng tên khác nhau và đặt sao cho đúng nghĩa đại diện
-        
         //đặt 1 biến chứa tên;
         String number9 = "Java2"; // gây hiểu nhầm ko đặt tên nghĩa bị sai
-        
+
         // *********** Các kiểu dữ liệu của biến ***********
         //String: "xin chao cac ban" "moi ban nhap vao"
         //Char : 'D' 'E' 'a' '1' '2' '\u0040' = @ '\u0041'
@@ -54,7 +53,21 @@ public class S2_KhaiBaoBien {
         //Luyện tập tự khai báo để nhớ tên kiểu dữ liệu và loại dữ liệu mà kiểu dữ liệu đó chấp nhận.
         // *********** Biến cục bộ và biến toàn cục ***********
         //final String userName = "admin";
-       
+    }
+
+    public void test() {
+         //String name = "Dung";//Cách khai báo cục bộ
+        System.out.println(name);
+    }
+
+    public void test2() {
+         //String name = "Dung";//Cách khai báo cục bộ
+        System.out.println(name);
+    }
+
+    public void test1() {
+        //String name = "Dung";//Cách khai báo cục bộ
+        System.out.println(name);
     }
 
 }
