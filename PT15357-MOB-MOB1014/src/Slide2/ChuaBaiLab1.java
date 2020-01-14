@@ -20,12 +20,12 @@ public class ChuaBaiLab1 {
         System.out.println("Moi ban nhap 1: ");
         name = sc.nextLine();
         System.out.println("Moi ban nhap 2: ");
-//        namsinh = sc.nextInt();//Trôi lệnh nextLine()
-//        sc.nextLine();//Cách 1
+        //namsinh = sc.nextInt();//Trôi lệnh nextLine()
+        //sc.nextLine();//Cách 1
         namsinh = Integer.parseInt(sc.nextLine());
         System.out.println("Moi ban nhap 3: ");
         msv = sc.nextLine();
         float a = 3.14f;// Cách khai báo float
-//        float b = Math.PI cách khai báo PI
+        //float b = Math.PI cách khai báo PI
     }
 }
