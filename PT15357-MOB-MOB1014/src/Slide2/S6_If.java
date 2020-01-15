@@ -12,6 +12,7 @@ package Slide2;
 public class S6_If {
 
     public static void main(String[] args) {
+        //Mệnh đề if trong java được sử dụng để kiểm tra giá trị dạng boolean của điều kiện. Mệnh đề này trả về giá trị True hoặc False .
         int a = -5;
         if (a < 0) {
             System.out.println("Số nguyên âm ");
