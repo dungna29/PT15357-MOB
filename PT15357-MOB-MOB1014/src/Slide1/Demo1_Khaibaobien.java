@@ -26,17 +26,7 @@ public class Demo1_Khaibaobien {
         //int temp;
         //temp = 5 + 7 * 2 - 4 / 2;
         //System.out.println(temp);
-        //System.out.printf("Thông tin bạn nhập vào là %s | %d | %s", "Dung", 12, "test");
-
-        Scanner sc = new Scanner(System.in);
-        Scanner sc1 = new Scanner(System.in);
-        System.out.println("a1 :");
-        String temp1 = sc.nextLine();
-        System.out.println("a2 :");
-        double a1 = sc.nextDouble();
-        System.out.println("a3 :");
-        String temp2 = sc1.nextLine();
-        System.out.println(temp1 + 1 + temp2);
+        //System.out.printf("Thông tin bạn nhập vào là %s | %d | %s", "Dung", 12, "test");        
     }
 
 }

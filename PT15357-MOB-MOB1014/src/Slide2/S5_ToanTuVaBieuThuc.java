@@ -12,43 +12,47 @@ package Slide2;
 public class S5_ToanTuVaBieuThuc {
 
     public static void main(String[] args) {
-        //Toán tử số học + - * /     ++ --
-        //int a = 2;
-        //a++;// cộng thêm 1
-        //++a;// ++ và trừ trừ khai báo như nhau
-        //++a;
-        //System.out.println(a);//
-        ////      System.out.println(--a);//Trừ đi 1
+        //Toán tử số học bao gồm + - * /  %(Chia lấy dư)   ++ -- 
+        
+        //Ví dụ về toán tử:
+        //int a = 5;//Khai báo một số nguyên kiểu int với tên biến là a và khởi tạo giá trị ban đầu là 5
+        //a++;// Tăng giá trị của a lên 1
+        //++a;// Tăng giá trị của a lên 1
+        //System.out.println(a);// In ra kết quả a để xem kết quả
+        
+        //Ví dụ về toán tử --
+        //int b = 5;
+        //b--;// Giảm giá trị của b đi 1
+        //++b;
+        //System.out.println(b);
 
-        //Bài tập
-        //Postfix và Prefix
-        //int a = 14;
-        //int b = 9;
-        //a++;
-        //--a;
-        //System.out.println(++a + b++ - 2);
-        //Toán tử so sánh > , < , >=, <=, ==, !=
-        //int a = 7;
-        //int b = 8;
-        //boolean temp = a>b;
-        //System.out.println(temp);
-        //Toán tử Logic || && !
-        int a = 7;
-        int b = 8;
-        //boolean temp = !(5 > 8) && 9 < 10;
-        // System.out.println(temp);
-        //<điều kiện> ? <giá trị đúng> : <giá trị sai>
-        //boolean temp2 = 5 > 8 ? true : false;
-        //System.out.println(temp2);
+        //Toán tử so sánh > , < , >=, <=, ==, != dùng để so sánh giữa 2 giá trị trả ra giá trị true hoặc false
+        //boolean bool = 5 == 9;//Nếu 5 mà bằng 9 thì sẽ trả ra giá trị true hoặc false
+        
+        //Toán tử Logic (|| (hoặc)) (&& (và)) (!(phủ định) not) Dùng để nối giữa 2 mệnh đề điều kiện và trả ra giá trị true hoặc false tùy vào điều kiện bài toán đề ra
+        //boolean boollogic = !((1 > 0) && (8 > 0));// Phủ định của ((1 lớn hơn 0 = true) và  (8 lớn 0 = true)) = true) vì có dấu phủ định bên ngoài nên = false
+        
 
-        //trong database
-        String user = "dungna";
-        String pass = "1234";
 
-        String user1 = "dungna";
-        String pass1 = "12345";
-        boolean temp3 = (user == user1) || (pass == pass1) ? true : false;
-        System.out.println(temp3);
+        //Toán tử 3 ngồi <điều kiện> ? <giá trị đúng> : <giá trị sai>
+        double diemsv = 8.0;// Khởi tạo biến số thực có kiểu là double và có tên biến là diemsv và khởi tạo giá trị ban đầu là 8.0
+        String toantubangoi = 5.0 >= diemsv ? "Toang" : "Hên 3 ngôi"; //Nếu 5.0 mà lớn hơn hoặc bằng diemsv thì vào true hoặc false        
+        System.out.println(toantubangoi);
+        
+        //So sánh giữa việc dùng if và toán tử 3 ngôi các bạn sẽ thấy toán tử 3 ngôi viết gọn gàng code hơn rất nhiều so với việc dùng if trên cùng 1 bài toán
+        //Nhưng nếu câu điều kiện phức tạp và dài hơn có thể gây ra khó bảo trì code nếu không có kinh nghiệm
+        //Cách sử dụng if bên dưới tường minh hơn rất nhiều
+        if (diemsv <= 5.0) {
+            System.out.println("Toang");
+
+        }
+        if (diemsv > 5.0) {
+            System.out.println("Hên");
+
+        }
+        if (!false) {
+            System.out.println("123");
+        }
 
     }
 
