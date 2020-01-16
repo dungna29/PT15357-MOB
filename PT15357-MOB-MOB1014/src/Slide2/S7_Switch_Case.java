@@ -12,26 +12,29 @@ import java.util.Scanner;
  * @author Nguyen Anh Dung
  */
 public class S7_Switch_Case {
-    //Cấu trúc rẽ nhánh switch - case cho phép bạn lựa chọn một trong nhiều 
-    //phương án có khả năng xảy ra, nó có thể dùng dể thay thế cho cấu trúc điều khiểnif - else if - else
 
     public static void main(String[] args) {
-        int choicel;
-        Scanner sc = new Scanner(System.in);
-        choicel = sc.nextInt();
-        switch (choicel) {
+        //Cấu trúc rẽ nhánh switch - case cho phép bạn lựa chọn một trong nhiều 
+        //phương án có khả năng xảy ra, nó có thể dùng dể thay thế cho cấu trúc điều khiểnif - else if - else
+        int a = 3;
+        switch (a) {
             case 1:
-                System.out.println("Case 1");
+                System.out.println("Vào chức năng 1");
+                //Triển khai các chứng năng bên trong nó
                 break;
             case 2:
-                System.out.println("Case 2");
+                System.out.println("Vào chức năng 2");
                 break;
             case 3:
-                System.out.println("Case 3");
+                System.out.println("Vào chức năng 3");
+                // break; không sử dụng thì sẽ đọc xuống tiếp
+                break;
             case 4:
-                System.out.println("Case 4");
+                System.out.println("Vào chức năng 4");
+                break;
             default:
-                System.out.println("Chúng tôi không có sự lựa chọn của bạn");
+                System.out.println("Không có chức năng đó");
+
         }
 
     }

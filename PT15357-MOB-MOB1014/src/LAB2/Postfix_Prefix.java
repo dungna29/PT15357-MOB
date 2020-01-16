@@ -12,8 +12,8 @@ package LAB2;
 public class Postfix_Prefix {
 
     public static void main(String[] args) {
-        int firstVariable = 9, secondVariable = 10, thirdVariable = 3, result;
-        result = firstVariable++ + ++secondVariable - --thirdVariable;
+        int firstVariable = 5, secondVariable = 9, thirdVariable = 3, result;        
+        result = ++firstVariable + secondVariable-- - ++thirdVariable;       
         System.out.println("First variable = " + firstVariable);
         System.out.println("Second variable = " + secondVariable);
         System.out.println("Third variable = " + thirdVariable);
