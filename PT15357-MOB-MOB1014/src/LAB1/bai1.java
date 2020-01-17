@@ -14,13 +14,13 @@ import java.util.Scanner;
 public class bai1 {
 
     public static void main(String[] ags) {
-        String FullName,StudentCode;
+        String FullName,StudentCode;        
         int YearofBirth;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Xin mời nhập họ tên: ");
         FullName = scanner.nextLine();
         System.out.print("Xin mời nhập năm sinh: ");
-        YearofBirth = scanner.nextInt();
+        YearofBirth = scanner.nextInt();        
         scanner.nextLine();
         System.out.print("Xin mời nhập mã sinh viên: ");
         StudentCode = scanner.nextLine();

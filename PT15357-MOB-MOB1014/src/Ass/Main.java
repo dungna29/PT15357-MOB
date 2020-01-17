@@ -5,6 +5,10 @@
  */
 package Ass;
 
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  *
  * @author LegendNguyen
@@ -12,12 +16,12 @@ package Ass;
 public class Main {
 
     public static void main(String[] args) {
-        Menu();
-        NguoiDungChonChucNang();
-       
+        while (true) {
+            Menu();
+            NguoiDungChonChucNang();
+        }
 
     }
-   
 
     static void Menu() {
         System.out.println("****** Chương Trình Quản Lý SV & GV                             ******");
@@ -35,26 +39,40 @@ public class Main {
     }
 
     static void NguoiDungChonChucNang() {
-        //Switch case
-         switch (1) {
-            case 1:
-                System.out.println("Vào chức năng 1");
-                //Triển khai các chứng năng bên trong nó
-                break;
-            case 2:
-                System.out.println("Vào chức năng 2");
-                break;
-            case 3:
-                System.out.println("Vào chức năng 3");
-                // break; không sử dụng thì sẽ đọc xuống tiếp
-                break;
-            case 4:
-                System.out.println("Vào chức năng 4");
-                break;
-            default:
-                System.out.println("Không có chức năng đó");
+        String input;
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.println("Mời bạn chọn chức năng bằng cách nhập số từ bàn phím: ");
+            input = sc.nextLine();
+            Pattern pattern = Pattern.compile("\\d*");// Cụm so sánh Regex là kiểu số từ 0 đến 9
+            Matcher matcher = pattern.matcher(input);
+            if (matcher.matches()) {//matcher chỉ trả ra giá trị true hoặc false
+                //Switch case
+                switch (Integer.parseInt(input)) {
+                    case 1:
+                        System.out.println("Vào chức năng 1");
+                        //Triển khai các chứng năng bên trong nó
+                        break;
+                    case 2:
+                        System.out.println("Vào chức năng 2");
+                        break;
+                    case 3:
+                        System.out.println("Vào chức năng 3");
+                        // break; không sử dụng thì sẽ đọc xuống tiếp
+                        break;
+                    case 4:
+                        System.out.println("Chức năng thoát");
+                        System.exit(0);
+                        break;
+                    default:
+                        System.out.println("Không có chức năng đó");
+                }
 
-        }
+            } else {
+                System.out.println("Mời bạn nhập vào kiểu số để chọn chức năng ");
+
+            }
+        } while (true);
 
     }
 
