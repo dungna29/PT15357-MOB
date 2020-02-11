@@ -72,6 +72,7 @@ public class S1_VongLap {
 //
 //        }
         //Bài tập tạo một menu sử dụng switch case chương trình máy tính đơn giản có sử dụng switch case và sử dụng vòng lặp và bắt lỗi người dùng nhập vào
+        
     }
 
     static void Menu() {
