@@ -184,41 +184,52 @@ public class S3_TongKetMang {
     }
 
     static void ThuatToan() {
-//        int[] a = {9, 8, 7, 6, 5, 1, 0};
-//        int temp;
-//        for (int i = 0; i < a.length - 1; i++) {
-//            // i = 0
-//            //i = 1
-//            for (int j = 1; j < a.length; j++) {
-//                //j = 1
-//                //j = 2
-//                if (a[i] > a[j]) {//nếu vị trí liên kề mà lớn hơn thì dảo cho nó
-//                    temp = a[i];// 9 > 8 temp = 9
-//                    a[i] = a[j];// vị trí ố 0 sẽ bằng 8
-//                    a[j] = temp;
-//                }
-//            }
-//        }      
-//        
-//        for (int x : a) {
-//            System.out.print(x + "  ");
-//        }
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Mời bạn chọn Yes hoặc No (Bạn phải gõ Y hoặc N)");
-        String input = sc.nextLine();
-        input.toLowerCase();//Khi ng dùng truyền vào Y thì nó sẽ bị thành y thường
-        if (input.length() == 1) {
-            //ngườ dùng có thể nhập y Y hoặc n N
-            if (input.equals("y")) {
-                //Thực hiện 1 chức năng nào đó
-                //Khi người ta truyền nguyễn Thị Duyên - nguyễn thị duyên
+        int[] a = {9, 7, 8, 4};
+        int temp;
+        for (int i = 0; i < a.length - 1; i++) {
+            System.out.println("Vòng lặp của 1");
+            for (int j = 1; j < a.length; j++) {
+                System.out.println("Vòng lặp của 2");
+                System.out.println(" i và j  hiện tại = " + i + "  " + j);
+                System.out.println("Mảng TRƯỚC khi kiểm tra");
+                for (int x : a) {
+                    System.out.print(x + "  ");
+                }
+                System.out.println("");
+                System.out.println("Kiểm tra j có lớn hơn j " + a[i] + " > " + a[j]);                
+                if (a[i] > a[j]) {//nếu vị trí liên kề mà lớn hơn thì dảo cho nó
+                    temp = a[i];// 9 > 8 temp = 9
+                    a[i] = a[j];// vị trí ố 0 sẽ bằng 8
+                    a[j] = temp;
+                }
+                System.out.println("Mảng SAU khi kiểm tra");
+                for (int x : a) {
+                    System.out.print(x + "  ");
+                }
+                System.out.println("");
             }
-            if (input.equalsIgnoreCase("y")) {
-                //Thực hiện 1 chức năng nào đó
-            }
-        }else{
-            System.out.println("Bạn phải nhập 1 ký tự");
+
         }
+
+        for (int x : a) {
+            System.out.print(x + "  ");
+        }
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Mời bạn chọn Yes hoặc No (Bạn phải gõ SV hoặc GV)");
+//        String input = sc.nextLine();
+//        input.toLowerCase();//Khi ng dùng truyền vào Y thì nó sẽ bị thành y thường
+//        if (input.length() == 1) {
+//            //ngườ dùng có thể nhập y Y hoặc n N
+//            if (input.equals("y")) {
+//                //Thực hiện 1 chức năng nào đó
+//                //Khi người ta truyền nguyễn Thị Duyên - nguyễn thị duyên
+//            }
+//            if (input.equalsIgnoreCase("y")) {
+//                //Thực hiện 1 chức năng nào đó
+//            }
+//        }else{
+//            System.out.println("Bạn phải nhập 1 ký tự");
+//        }
 
     }
 
