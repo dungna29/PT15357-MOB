@@ -52,13 +52,11 @@ public class S2_Mang {
 //            System.out.println("Giá trị của i = " + i);
 //            System.out.println(c[i]);
 //        }
-        
         //Vòng lặp nữa foreach
         for (int x : c) {
             System.out.println("Các phần trử trong mảng là: " + x);
         }
-        
-        
+
     }
 
 }
