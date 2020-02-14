@@ -55,6 +55,7 @@ public class S3_TongKetMang {
         //[Kiểu_dữ_liệu] Tên_mảng[][] = new [Kiểu_dữ_liệu] [Số_dòng][Số_cột];
         //Gán dữ liệu cho phần tử mảng 2 chiều
         //Tên_mảng[Chỉ_số_dòng][Chỉ_số_cột] = Value;
+        //Sắp xếp mảng 2 chiều
         //******************************************************
         //Bài tập1 :
         //Cho người dùng khai báo một mảng và nhập các phần tử vào trong mảng đó sau đó in ra màn hình mảng người dùng nhập vào
@@ -184,7 +185,7 @@ public class S3_TongKetMang {
     }
 
     static void ThuatToan() {
-        int[] a = {9, 7, 8, 4};
+        int[] a = {8, 4, 2,1};
         int temp;
         for (int i = 0; i < a.length - 1; i++) {
             System.out.println("Vòng lặp của 1");
