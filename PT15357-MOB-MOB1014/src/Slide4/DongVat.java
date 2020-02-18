@@ -11,7 +11,21 @@ package Slide4;
  */
 public class DongVat {
     private String HoTen;
-    private int NamSinh;
+    private int NamSinh = 1989;
+
+    public String getHoTen() {
+        return HoTen;
+    }
+
+    public void setHoTen(String HoTen) {
+        this.HoTen = HoTen;
+    }
+
+    public int getNamSinh() {
+        return NamSinh;
+    }
+
+    
     
     
 }

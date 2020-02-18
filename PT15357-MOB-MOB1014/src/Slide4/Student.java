@@ -6,7 +6,6 @@
 package Slide4;
 
 import java.util.Scanner;
-
 /**
  *
  * @author Nguyen Anh Dung

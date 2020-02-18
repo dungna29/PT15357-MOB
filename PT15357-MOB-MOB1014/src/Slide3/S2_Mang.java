@@ -5,13 +5,14 @@
  */
 package Slide3;
 
+
 /**
  *
  * @author Nguyen Anh Dung
  */
 public class S2_Mang {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        
         //Mảng là cấu trúc lưu trữ nhiều phần từ bên trong nó và phải có cùng kiểu dữ liệu.
         //Khi lưu trữ được thì có thể truy xuất các phần tử bên trong nó
 
