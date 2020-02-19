@@ -46,8 +46,8 @@ public class OOP_LapTrinhHuongDoiTuong {
 //
 //        System.out.println("Thông tin của sinh viên là:" + ten + " " + msv + " " + namsinh + " " + tuoi);
         Student studentCLASS = new Student();       
-//        studentCLASS.InputStudent();
-//        studentCLASS.OutputStudent();
+        studentCLASS.InputStudent();
+        studentCLASS.OutputStudent();
         studentCLASS.TinhTuoiSV(2000);
        
        
@@ -59,7 +59,7 @@ public class OOP_LapTrinhHuongDoiTuong {
         //Đối tượng (Object): được xem là một thực thể trong thế giới thực.
         //Object bao gồm: Thuộc tính (Attribute/Properties) và Phương Thức (Hàm) (Method)
         //Attribute: Các thuộc tính của đối tượng
-        //Properties: Nó có thể được sử dụng để lấy giá trị thuộc tính hoặc gán dựa trên khóa thuộc tính
+        //Properties: 
 
         //***4 Tính chất quan trọng của OOP***
         //Tính trừu tượng (abstraction):
