@@ -20,9 +20,9 @@ import javax.swing.text.StyledEditorKit;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayObject();
+        //  ArrayObject();
 //        JavaList();
-        //Arraylist();
+        Arraylist();
 
     }
 
@@ -184,36 +184,90 @@ public class Main {
     }
 
     static void Arraylist() {
-        ArrayList arrList = new ArrayList();
-        arrList.add("Cường");
-        arrList.add(true);
-        arrList.add(1);
-        arrList.add(2.5);
-        //Khi add thêm số nguyên thủy thì tự động chuyển sang đối tượng kiểu wrapper
+        //Arraylist không định kiểu
+        ArrayList arrListlKhongDinhKieu = new ArrayList();
+        arrListlKhongDinhKieu.add("Cường");
+        arrListlKhongDinhKieu.add(true);
+        arrListlKhongDinhKieu.add(1);
+        arrListlKhongDinhKieu.add(2.5);
+        //Khi add thêm số nguyên thủy thì tự động chuyển sang đối tượng kiểu wrapper Double Interge
         //Khi truy xuất các phần tử, cần ép về kiểu gốc của phần tử để xử lý
-        Integer x = (Integer) arrList.get(2);
+//       double temp = arrListlKhongDinhKieu.get(3);(Lỗi)
+//        double temp = (double) arrListlKhongDinhKieu.get(3);
+        Double temp = (Double) arrListlKhongDinhKieu.get(3);
+        //System.out.println(lstKhongDinhKieu.get(1));
 
+        //ArrayList có định kiểu ở đây là kiểu String
         ArrayList<String> arrListString = new ArrayList<String>();
         arrListString.add("Cường");
-        arrListString.add("Dũng");
-        String s = arrListString.get(0);
-
-        Student st1 = new Student("Duy", "JAVA1", 19);
-        Student st2 = new Student("Kien", "Web", 19);
-        Student st3 = new Student("Duyen", "JAVA2", 19);
-        Student st4 = new Student("Thang", "JAVA2", 19);
-        ArrayList<Student> arrayListStudent = new ArrayList<Student>();
-        arrayListStudent.add(st1);
-        arrayListStudent.remove(0);
-        arrayListStudent.add(st1);//Có thể add nhiều đối tượng giống nhau
-        arrayListStudent.add(st1);
-        arrayListStudent.add(st2);
-        arrayListStudent.add(1, st3);
-        for (Student student : arrayListStudent) {
-            System.out.println(student.getTenSV() + student.getMonSV());
+        arrListString.add("Dũng");//Chèn phần tử vào cuối list khi dùng add
+        arrListString.add(0, "Duy");// Chèn phần tử vào List theo vị trí chỉ định
+        //boolean remove(Object) dùng để tìm và xóa phần tử trong ArrayList
+        arrListString.remove("Dũng");
+        //Object remove(int index) Xóa phần tử theo vị trí chỉ định trong ArrayList
+        arrListString.remove(0);
+        //void clear() Xóa toán bộ phần tử trong ArrayList
+        //arrListString.clear(); 
+        arrListString.add("Kien");
+        //Set object // chỉ áp dụng với thằng kiểu dữ liệu nguyên thủy
+        arrListString.set(1, "Duyen");
+        //Hàm get dùng để lấy phần tử ra theo index
+        System.out.println(arrListString.get(0));
+        //Hàm size để đo kích thước của mảng
+        System.out.println(arrListString.size());
+        //Contains dùng để kiểm tra tồn tại của phần tử có trong mảng hay không
+        if (arrListString.contains("Duyen")) {
+            System.out.println("Có bạn Duyên trong lớp MOB");
+        } else {
+            System.out.println("Không tìm thấy bạn đó trong lớp");
         }
-        System.out.println(arrayListStudent.indexOf(st2));
-        arrayListStudent.remove(arrayListStudent.indexOf(st2));
+        //Tìm vị trí của phần tử trong Arraylist dùng indexOf
+        System.out.println(arrListString.indexOf("Duyen"));
 
+        //isEmpty là kiểm tra xem mảng có rỗng hay không
+        if (!arrListString.isEmpty()) {
+            for (Object object : arrListString) {
+                System.out.println(object);
+            }
+        } else {
+            System.out.println("Arraylist không chưa phần tử");
+        }
+
+        //Các câu lệnh nâng cao của ArrayList
+        System.out.println("Các câu lệnh nâng cao của ArrayList");
+        ArrayList<String> arrListString1 = new ArrayList<String>();
+        arrListString1.add("A");
+        arrListString1.add("B");
+        ArrayList<String> arrListString2 = new ArrayList<String>();
+        //arrListString2.add("Cường");
+        arrListString2.add("C");
+        arrListString2.add("D");
+        //arrListString1.addAll(arrListString2);//addAll dùng để hợp 2 danh sách lại
+        //arrListString1.removeAll(arrListString2);//removeAll List2 là xóa danh sách những người nằm trong list 2 chứ ko xóa List1
+        for (Object object : arrListString1) {
+            System.out.println(object);
+        }
+        System.out.println("----RetainAll");
+        System.out.println(arrListString1.retainAll(arrListString2));//retainAll Giao của 2 tập hợp
+        System.out.println(arrListString1.containsAll(arrListString2));//Kiểm tra sự tồn tại của list 2 có đang nằm trong list 1 hay không
+
+//
+//        Student st1 = new Student("Duy", "JAVA1", 19);
+//        Student st2 = new Student("Kien", "Web", 19);
+//        Student st3 = new Student("Duyen", "JAVA2", 19);
+//        Student st4 = new Student("Thang", "JAVA2", 19);
+//        ArrayList<Student> arrayListStudent = new ArrayList<Student>();
+//        arrayListStudent.add(st1);
+//        arrayListStudent.remove(0);
+//        arrayListStudent.add(st1);//Có thể add nhiều đối tượng giống nhau
+//        arrayListStudent.add(st1);
+//        arrayListStudent.add(st2);
+//        arrayListStudent.add(1, st3);       
+//       
+//        for (Student student : arrayListStudent) {
+//            System.out.println(student.getTenSV() + student.getMonSV());
+//        }
+//        System.out.println(arrayListStudent.indexOf(st2));
+//        arrayListStudent.remove(arrayListStudent.indexOf(st2));
     }
 }
