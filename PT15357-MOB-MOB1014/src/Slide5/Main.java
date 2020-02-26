@@ -22,7 +22,27 @@ public class Main {
     public static void main(String[] args) {
         //  ArrayObject();
 //        JavaList();
-        Arraylist();
+//        Arraylist();
+
+        System.out.println("Các câu lệnh nâng cao của ArrayList");
+        ArrayList<String> arrListString1 = new ArrayList<String>();
+        arrListString1.add("A");
+        arrListString1.add("B");
+        ArrayList<String> arrListString2 = new ArrayList<String>();
+        arrListString2.add("A");
+        arrListString2.add("D");
+        for (Object object : arrListString1) {
+            System.out.println(object);
+        }
+        for (Object object : arrListString2) {
+            System.out.println(object);
+        }
+        System.out.println("----RetainAll GIAO CỦA 2 TẬP HƠP LIST 1 và LIST 2");
+        //System.out.println(arrListString1.retainAll(arrListString2));//retainAll Giao của 2 tập hợp
+        arrListString1.retainAll(arrListString2);
+        for (Object object : arrListString1) {
+            System.out.println(object);
+        }
 
     }
 
@@ -240,7 +260,7 @@ public class Main {
         arrListString1.add("B");
         ArrayList<String> arrListString2 = new ArrayList<String>();
         //arrListString2.add("Cường");
-        arrListString2.add("C");
+        arrListString2.add("A");
         arrListString2.add("D");
         //arrListString1.addAll(arrListString2);//addAll dùng để hợp 2 danh sách lại
         //arrListString1.removeAll(arrListString2);//removeAll List2 là xóa danh sách những người nằm trong list 2 chứ ko xóa List1
@@ -248,7 +268,11 @@ public class Main {
             System.out.println(object);
         }
         System.out.println("----RetainAll");
-        System.out.println(arrListString1.retainAll(arrListString2));//retainAll Giao của 2 tập hợp
+        //System.out.println(arrListString1.retainAll(arrListString2));//retainAll Giao của 2 tập hợp
+        arrListString1.retainAll(arrListString2);
+        for (Object object : arrListString1) {
+            System.out.println(object);
+        }
         System.out.println(arrListString1.containsAll(arrListString2));//Kiểm tra sự tồn tại của list 2 có đang nằm trong list 1 hay không
 
 //

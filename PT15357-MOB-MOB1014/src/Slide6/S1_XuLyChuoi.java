@@ -42,6 +42,16 @@ public class S1_XuLyChuoi {
             System.out.println(x);
         }
         //equals() thay dấu bằng và sử dụng với String
+        System.out.println("-----------------------");
+        String name1 = "Nguyen Anh Dung Nguyen Anh Dung";
+        String name5 = "Do Anh Dung";
+        if (name1.equals("Nguyen Anh Dung")) {
+            System.out.println("Đăng nhập thành công Equals");
+        }
+        if (name1.contains("Nguyen Anh Dung")) {
+            System.out.println("Đăng nhập thành công contains");
+        }
+
         //equalsIgnoreCase() So sánh giống như Equals nhưng nó không quan tâm về chữ hoa hay chữ thường
         //contains()
         String name3 = "HOANG QUOC VIET";

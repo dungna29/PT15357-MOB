@@ -95,8 +95,7 @@ public class ChucNangQuanLySinhVien {
         arrListStudent.add(st1);
         arrListStudent.add(st2);
         arrListStudent.add(st3);
-        arrListStudent.add(st4);
-
+        arrListStudent.add(st4);        
         System.out.println("Danh sách sinh viên là :");
         for (Student student : arrListStudent) {
             System.out.println(student.getTenSV() + " " + student.getMonSV() + " " + student.getTuoiSV());
